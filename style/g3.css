@@ -42,6 +42,16 @@
     
 }
 
+/* main  */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main > section{
+    margin: 130px;
+}
+
 
 /* header Styles */
 
@@ -97,13 +107,88 @@
 
 .banner-image{
     max-width: 100%;
+    margin-bottom: 2.8rem;
 }
 
 
 
+/* feature related style */
+.teams{
+    align-items: center;
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.our-features{
+    max-width: 537px;
+    margin-left: 80px;
+
+}
+
+.feafure-description{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#Quick{
+    color: #727272;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+#our{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+#Features{
+    color: #FF900E;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+
+/* Some facts section  */
+.section-title{
+    color: #131313;
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+
+.section-description{
+    color: #727272;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
 /* responsive media query  */
 @media screen and (max-width: 576px) {
-    .navber, .nav-links{
+    .navber, 
+    .nav-links, 
+    .teams{
         flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin: 20px;
+    }
+}
+
+
+/* responsive medium device */
+@media screen and (min-width: 576px)  and (max-width: 992px)  {
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin-left: 50px auto;
     }
 }
